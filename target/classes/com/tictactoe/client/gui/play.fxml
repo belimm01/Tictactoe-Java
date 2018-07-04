@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<AnchorPane fx:id="pane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.tictactoe.client.gui.PlayController">
+    <ImageView fitHeight="417.0" fitWidth="600.0" preserveRatio="true">
+        <Image url="@/com/tictactoe/client/background.jpg" />
+    </ImageView>
+    <Button layoutX="254.0" layoutY="82.0" mnemonicParsing="false" onAction="#createRoom" text="Create room" />
+    <ListView fx:id="rooms" layoutX="200.0" layoutY="141.0" prefHeight="200.0" prefWidth="200.0" />
+
+    <Label layoutX="277.0" layoutY="120.0" text="Rooms" />
+    <Button layoutX="14.0" layoutY="355.0" mnemonicParsing="false" onAction="#back" text="Back" />
+    <Button layoutX="414.0" layoutY="316.0" mnemonicParsing="false" onAction="#refresh" text="Refresh" />
+</AnchorPane>
