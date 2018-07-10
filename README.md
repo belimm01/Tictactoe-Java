@@ -6,12 +6,10 @@
 
 1)Nainstalujte ```mongodb``` - https://docs.mongodb.com/manual/installation/
 
-2)Pridejte jakson, jestli bude potreba - https://github.com/FasterXML/jackson-core/releases/tag/jackson-core-2.9.6
+2)Nastavte v projektu `Tictactoe` v tride Client - local IP 
 
-3)Nastavte v projektu `Tictactoe` v tride Client - local IP 
+3)Spustite Server a pak MainController (viz. doc) (MainCotroller- klient, muze byt vice). 
 
-4)Spustite Server a pak MainController (viz. doc) (MainCotroller- klient, muze byt vice). 
-
-5)Pouzijte java 8, zkousel jsem 10 a 9, hlasi chybu z javafx knihovnou.
+4)Pouzijte java 8, zkousel jsem 10 a 9, hlasi chybu z javafx knihovnou.
 
 Muzete hrat !!!
