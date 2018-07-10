@@ -6,7 +6,8 @@
 
 1)Nainstalujte ```mongodb``` - https://docs.mongodb.com/manual/installation/
 
-2)Nastavte v projektu `Tictactoe` v tride Client - local IP 
+
+2)Nastavte v projektu `Tictactoe` v tride Client - [local IP](https://www.whatismyip.com/my-ip-information/)
 
 3)Spustite Server a pak MainController (viz. doc) (MainCotroller- klient, muze byt vice). 
 
