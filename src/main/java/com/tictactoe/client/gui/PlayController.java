@@ -26,7 +26,6 @@ public class PlayController {
     public AnchorPane pane;
     @FXML
     private ListView<RoomBean> rooms;
-    private ScheduledService<Void> refreshRoomsListService;
 
     
     //vypise v ListView vytvoreny vsechny room
@@ -75,13 +74,11 @@ public class PlayController {
 
             }
         });
-        refreshRoomsListService = Scheduler.schedule(this::refreshRoomsList, 100);
     }
 
     //zobrazi okinko createRoom
     @FXML
     private void createRoom(ActionEvent actionEvent) throws IOException {
-        refreshRoomsListService.cancel();
         Stage stage = (Stage) ((Node) actionEvent.getSource()).getScene().getWindow();
         switchScene(stage, "createRoom.fxml");
     }
@@ -101,8 +98,6 @@ public class PlayController {
    //obnovi list vytvorenych room
     private void refreshRoomsList() {
         Platform.runLater(() -> {
-            if (!refreshRoomsListService.isRunning())
-                return;
             try {
                 Map<String, RoomBean> _rooms = null;
                 _rooms = Client.getInstance().getRooms();
@@ -115,7 +110,6 @@ public class PlayController {
 
     //prepne okinko
     protected void switchScene(Stage stage, String scene) throws IOException {
-        refreshRoomsListService.cancel();
         stage.setScene(new Scene(FXMLLoader.load(getClass().getResource(scene))));
     }
 }

@@ -26,10 +26,6 @@ public class Server {
 
     public static Map<String, Room> rooms = new HashMap<>();
 
-    /*
-//Tady zapojim server  
-//pri pomoci soketu.
-     */
 
     public static void main(String[] args) throws Exception {
         System.out.println("Tic Tac Toe Server is Running");

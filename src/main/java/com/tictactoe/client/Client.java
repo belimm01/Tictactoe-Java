@@ -18,7 +18,7 @@ import java.util.Map;
 
 public class Client {
 
-    private static String SERVER_ADDRESS = "172.16.1.105";//lokalni adressa, pred zapnutim musime zkontrolovat ji
+    private static String SERVER_ADDRESS = "192.168.73.106";//lokalni adressa, pred zapnutim musime zkontrolovat ji
     private static int PORT = 8901;//pomosi portu klient muze se pripojit na server
     private Socket socket;
 
